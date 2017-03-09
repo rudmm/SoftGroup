@@ -1,33 +1,21 @@
-package com.company;
-
 import org.junit.Assert;
 import org.junit.Test;
 
-
+import static org.junit.Assert.*;
 
 /**
  * Created by michael on 09.03.17.
  */
 public class MainTest {
-    Main m = new Main();
+    Main main = new Main();
     @Test
-    public void reversString() throws Exception {
-        String s1 = "1221";
-        boolean b = true;
-
-        String s = m.reversString(s1);
-        boolean a = s1.equals(s);
-
-        if(a!=b) Assert.fail();
-
-    }
-
-    @Test
-    public void pal() throws Exception {
-        String s1 = "паліндром";
-        String s2 = m.pal("1221");
-        if (s1!=s2) Assert.fail();
-
+    public void complementary() throws Exception {
+        int[] m = {1,3,4,11};
+        int k = 5;
+        int l = 4;
+        String s = "K = a["+0+"]+a["+2+"]";
+        String stest = main.complementary(m,k,l);
+        Assert.assertEquals(s, stest);
 
     }
 
